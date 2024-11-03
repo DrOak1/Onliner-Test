@@ -6,7 +6,7 @@
 ``pip install -r requirements``
 
 > Run tests
-> ``pytest test``
+> ``pytest .\test\tests.py``
 
 <h3>Test case to automate</h3>
 

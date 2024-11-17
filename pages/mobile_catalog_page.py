@@ -39,6 +39,8 @@ class MobileCatalogPage(BasePage):
         return self.driver.find_element(MobileCatalogPageLocators.PHONE + f"[{phone}]").text
 
     def update_phones_index(self, phone_names):
+        header = self.driver.find_element(MobileCatalogPageLocators.CATALOG_TITLE)
+        self.driver.scroll_to_element(header)
         phones = self.driver.find_elements(MobileCatalogPageLocators.PHONE)
         indices = []
 
